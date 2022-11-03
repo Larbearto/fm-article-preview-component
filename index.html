@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Frontend Mentor | Article Preview Component</title>
+  </head>
+  <body>
+    <!-- Left Side -->
+    <article class="article-card">
+      <div class="img-box">
+        <img src="./images/drawers.jpg" alt="" class="article-banner" />
+      </div>
+      <!-- Left Side -->
+
+      <!-- Right Side  -->
+      <div class="article-content">
+        <h2 class="article-title">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your
+          home
+        </h2>
+
+        <p class="article-text">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and
+          uninviting. I've got some simple tips to help you make any room feel complete.
+        </p>
+
+        <div class="article-author">
+          <div class="author">
+            <img src="./images/avatar-michelle.jpg" alt="" class="avatar" />
+            <div class="author-info">
+              <h6 class="author-name">Michelle Appleton</h6>
+              <p class="publish-date">28 Jun 2020</p>
+            </div>
+          </div>
+          <!-- Right Side  -->
+
+          <!-- Tooltip Share Icon -->
+          <div class="share">
+            <button class="share-button">
+              <ion-icon name="arrow-redo"></ion-icon>
+            </button>
+
+            <div class="share-option">
+              <span>share</span>
+
+              <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+
+              <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+
+              <a href="#">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tooltip Share Icon -->
+        </div>
+      </div>
+    </article>
+    <script>
+      const shareOption = document.querySelector('.share-option')
+
+      document.querySelector('.share-button').addEventListener('click', (event) => {
+        shareOption.classList.toggle('active')
+      })
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
